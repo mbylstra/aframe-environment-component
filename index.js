@@ -282,10 +282,10 @@ AFRAME.registerComponent('environment', {
     }
 
     // update sky colors
-    if (skyType != oldData.skyType ||
-      this.data.skyColor != oldData.skyColor ||
-      this.data.horizonColor != oldData.horizonColor) {
-
+    // if (skyType != oldData.skyType ||
+    //   this.data.skyColor != oldData.skyColor ||
+    //   this.data.horizonColor != oldData.horizonColor) {
+    if (true) {
       this.sky.removeAttribute('material');
 
       var mat = {};
@@ -335,15 +335,16 @@ AFRAME.registerComponent('environment', {
       this.data.flatShading != oldData.flatShading;
 
     // check if any parameter of the ground was changed, and update it
-    if (updateGroundGeometry ||
-        this.data.groundColor != oldData.groundColor ||
-        this.data.groundColor2 != oldData.groundColor2 ||
-        this.data.groundYScale != oldData.groundYScale ||
-        this.data.groundTexture != oldData.groundTexture ||
-        this.data.gridColor != oldData.gridColor ||
-        this.data.grid != oldData.grid
-        )
-    {
+    // if (updateGroundGeometry ||
+    //     this.data.groundColor != oldData.groundColor ||
+    //     this.data.groundColor2 != oldData.groundColor2 ||
+    //     this.data.groundYScale != oldData.groundYScale ||
+    //     this.data.groundTexture != oldData.groundTexture ||
+    //     this.data.gridColor != oldData.gridColor ||
+    //     this.data.grid != oldData.grid
+    //     )
+    // {
+    if (true) {
       this.updateGround(updateGroundGeometry);
       // set bounce light color to ground color
       if (this.hemilight) this.hemilight.setAttribute('light', {'groundColor': this.data.groundColor});
